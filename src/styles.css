@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
   text-align: center;
   text-emphasis: initial;
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 .author {
@@ -22,4 +22,8 @@ h2 {
   font-size: 30px;
   color: red;
   font-style: bold;
+}
+
+#quote-box {
+  backround-color: brown;
 }

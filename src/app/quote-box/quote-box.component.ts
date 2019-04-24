@@ -12,13 +12,9 @@ export class QuoteBoxComponent implements OnInit {
   constructor() {
     var dt = new Date();
     var day = dt.getDay();
-    console.log(day);
-    var quotes = QUOTES;
     this.display_quote = QUOTES[day];
   }
-  onClickAlert() {
-    alert("this has been clicked");
-  }
+
   whatDayIsIt() {
     if (this.day == 1) {
       return console.log("The day is Monday");
@@ -39,10 +35,11 @@ export class QuoteBoxComponent implements OnInit {
 
   dayIncrement(day) {
     day += 1;
-    console.log("the number is now" + day);
+
+    console.log("the number is now " + day);
     if (day == 7) {
       day = 0;
-      console.log("the number is now" + day);
+      console.log("the number is now " + day);
     }
     this.day = day;
     this.display_quote = QUOTES[day];
