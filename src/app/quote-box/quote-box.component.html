@@ -1,0 +1,12 @@
+<!-- Add an index variable to the ts part which shows a different quote based on the index of the quotes array -->
+
+<div class="box">
+  <h2 class="quote">{{ display_quote.quote }}</h2>
+  <span>
+    <h3 class="author">{{ display_quote.name }}</h3></span
+  >
+  <p>The day is {{ day }}</p>
+  <button (click)="whatDayIsIt()" (click)="onClickAlert()">
+    Press this button
+  </button>
+</div>
